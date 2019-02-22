@@ -1,0 +1,591 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    overflow-x: hidden;
+}
+
+/* Navbar */
+#nav-contain {
+    width: 377px;
+    height: 7%;
+    position: fixed;
+    z-index: 4;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 100%;
+    background: rgb(18, 116, 197);
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-bar #mobileUl {
+    display: none;
+    list-style: none;
+    flex-direction: row;
+    position: relative;
+    background: rgb(18, 116, 197);
+}
+
+#mobileMenu {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    display: inline-block;
+    z-index: 3;
+}
+
+
+#nav-bar ul li {
+    width: 100%;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    top: 20%;
+    background: rgb(18, 116, 197);
+}
+
+
+#nav-bar ul li a {
+    text-decoration: none;
+    font-weight: 900;
+    color: antiquewhite;
+    position: relative;
+}
+
+#nav-bar ul li:hover {
+    background: #444;
+}
+
+
+/* landing page */
+.l-contain #h1 {
+    font-size: 2rem;
+    width: 95%;
+    text-align: center;
+}
+
+.l-contain:after {
+    content: "Where Creativity Meets Simplicity to solve Technical Difficulties.";
+    top: 52%;
+    left: 10.5%;
+    position: absolute;
+    width: 75%;
+    height: 10%;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    color: steelblue;
+}
+
+
+@keyframes borderBottom {
+    from {
+        border-bottom: 5px  solid antiquewhite;
+        width: 0%;
+    }
+
+    to {
+        border-bottom: 5px  solid antiquewhite;
+        width: 95%;
+    }
+}
+
+
+
+#scr-down {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    border: antiquewhite 2px solid;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 3rem;
+    
+}
+/* about section */
+
+.img-layer {
+    overflow: hidden;
+}
+
+#about {
+    overflow: hidden;
+}
+.img-layer img {
+    animation: skewIn 1s ease-in-out 0s 1 alternate forwards;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    top: 15%;
+    left: 0%;
+    transform: scaleX(1.75) scaley(1.4);
+}
+
+#power-button {
+    position: absolute;
+    width: 7.5%;
+    height: 8%;
+    left: 46.75%;
+    top: 75.5%;
+    border-radius: 50%;
+    z-index: 10;
+    animation: skewInButton .9s ease-in-out 0s 1 alternate-reverse forwards;
+    display: inline-block;
+}
+
+#power-button #pwr-cont{
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    width: 7rem;
+    height: 100%;
+    top: 20%;
+    font-size: 1.5rem;
+    font-weight: 900;
+    animation: skewInButton .9s ease-in-out 0s 1 alternate-reverse forwards;
+}
+
+#page-creep {
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    left: 70%;
+    bottom: -100%;
+    overflow: hidden;
+    display: none;
+}
+
+#img-text {
+    text-align: center;
+    position: absolute;
+    color: antiquewhite;
+    width: 75%;
+    height: 45%;
+    left: 12.8%;
+    top: 15.5%;
+    z-index: 3;
+    animation: skewInText .9s ease-in-out 0s 1 alternate forwards;
+    display: none;
+    font-size: 1.1rem;
+}
+
+#img-text #img-text-content{
+    position: relative;
+    width: 150%;
+    height: 118.5%;
+    padding: .5rem .5rem;
+    display: none;
+}
+
+#icon-view-box {
+    position: absolute;
+    width: 16.3rem;
+    height: 10.5rem;
+    border-radius: 5%;
+    border: 3px solid black;
+    left: 12%;
+    top: 77%;
+    background: url(../img/about-comp-5.jpg) bottom center/cover;
+    background-size: 100% 100%;
+
+}
+
+#img-text .fa-globe-africa {
+    position: absolute;
+    left: -5%;
+    top: 15%;
+    z-index: -1;
+    cursor: pointer;
+}
+
+#img-text .fa-book{
+    position: absolute;
+    left: -4.5%;
+    top: 40%;
+    cursor: pointer;
+    z-index: -1;
+}
+#img-text .fa-book:hover + #icon-view-box {
+    transition: 1s;
+    z-index: 30;
+    background: url(../img/book.jpg) top center/cover;
+    background-size: 100% 100%;
+
+}
+
+#img-text .fa-microphone{
+    position: absolute;
+    left: -3.5%;
+    top: 65%;
+    z-index: -1;
+    cursor: pointer;
+}
+
+#img-text .fa-microphone:hover + #icon-view-box {
+    transition: 1s;
+    background: url(../img/karaoke.jpg) top center/cover;
+    background-size: 100% 100%;
+}
+
+#page-creep {
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    left: 70%;
+    bottom: -100%;
+    overflow: hidden;
+    display: none;
+}
+#ani-layer {
+    bottom: -65.6%;
+    position: relative;
+    width: 100%;
+    height: 35%;
+    opacity: 0;
+    transition: .05s;
+    display: none;
+    visibility: hidden;
+
+}
+/* Projects Page */
+
+#projects {
+    width: 100%;
+    height: 250vh;
+    background: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Project Squares */
+
+#proj-collection {
+    padding-top: 2%;
+    padding-bottom: 0;
+    flex: 3;
+    height: 100%;
+    background: steelblue;
+    border-top-right-radius: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+#next-page {
+    display: none;
+    position: absolute;
+    left: 65.4%;
+    top: 292.5%;
+    background: #222;
+    color: antiquewhite;
+    padding: 1%;
+    width: 9rem;
+    z-index: 1;
+    border-top-left-radius: 35%;
+    text-align: center;
+}
+
+
+.sect1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sect2 {
+    display: flex;
+    flex-direction: column;
+}
+.proj-sqr {
+    flex: 3 ;
+    height: max-content;
+    width: 99%;
+    margin: .5%;
+    border-radius: 2%;
+    z-index: 2;
+    background-size: 100% 100%;
+}
+
+.sqr1 {
+    flex: 1;
+    height: 150%;
+}
+
+.sqr2 {
+    flex: 1;
+
+}
+
+.sqr3 {
+    flex: 1;
+
+}
+
+.sqr4 {
+    flex: 1;
+
+}
+
+.sqr5 {
+    flex: 1;
+
+}
+
+
+.sqr6 {
+    flex: 1;
+
+}
+
+/* Contact Section */
+#contact {
+    height: 150vh;
+}
+
+.form-container {
+    width: 95%;
+    height: 95%;
+    background: antiquewhite;
+    border-radius: 2%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    visibility: visible;
+
+}
+
+#form {
+    flex: 3;
+    background: #222;
+    border-radius: 2%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+#form img {
+    width: 85%;
+    height: 75%;
+    border-radius: 50%;
+    border: 2px solid sandybrown;
+    position: relative;
+    margin-top: 7%;
+    margin-left: 8%;
+}
+
+
+.f-section1 h1 {
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 0%;
+    position: relative;
+    
+}
+
+.f-section1 h1:before {
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 65%;
+    border-bottom: 2px solid sandybrown;
+}
+
+.f-section2 {
+    height: 100%;
+}
+
+.f-section2 form {
+    position: relative;
+    top: -10%;
+    height: 200%;
+    width: 90%;
+}
+
+
+.f-section2 textarea {
+    height: 200%;
+}
+
+.f-section2 #button {
+    height: 5%;
+}
+
+.f-section2 #button:hover {
+    transition: .2s;
+    background: sandybrown;
+    color: #222;
+}
+
+.f-contain {
+    position: relative;
+    top: -5%;
+    width: 100%;
+    padding: 3%;
+}
+
+.f-section2 input {
+    height: 2.5rem;
+}
+.f-section2 label {
+    font-size: 1.2rem;
+}
+.f-section2 #button {
+    font-size: 1.2rem;
+}
+
+#social-media {
+    flex-direction: row;
+}
+
+#social-media h1 {
+    position: absolute;
+    top: 77%;
+    left: 32%;
+    width: 50%;
+    flex: 3;
+    
+}
+
+#social-media h1:before {
+    content: "";
+    position: absolute;
+    width: 48%;
+    height: 26%;
+    border-bottom: 2px solid white;
+    left: 27%;
+}
+
+#social-media a {
+    padding: 35% 5% 27% 5%;
+    position: relative;
+    left: 0%;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: 0%;
+    display: inline-block;
+    background: #222;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+    color: antiquewhite;
+    z-index: 0;
+}
+
+footer a {
+    width: 10%;
+    height: 90%;
+    left: 45.8%;
+}
+footer #up-arrow {
+    height: 50%;
+    font-size: .8rem;
+}
+
+footer p {
+    height: 20%;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+/* Submission Page */
+
+.l-contain h1 {
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    transform: translate(-50%,50%);
+    color: antiquewhite;
+    font-size: 1.9rem;
+    width: 95%;
+}
+
+.l-contain h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: borderBottom 3s ease-in-out 0s 3 normal forwards;
+    padding-bottom: .5rem;
+}
+
+@keyframes borderBottom {
+    from {
+        border-bottom: 5px  solid antiquewhite;
+        width: 0%;
+    }
+
+    to {
+        border-bottom: 5px  solid antiquewhite;
+        width: 95%;
+    }
+}
+
+
+
+#submission::after {
+    display: none;
+}
+
+#subButton {
+    position: absolute;
+    float: left;
+    height: 15%;
+    width: 15%;
+    top: 50%;
+    left: 16%;
+}
+
+#subButton i {
+    padding: 5%;
+    color: #1F618D;
+    animation: hatShake 1.5s ease-in-out .2s infinite normal forwards;
+}
+
+#subButton a {
+    color: antiquewhite;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+#subButton a:after {
+    content: "Back to the Magic!";
+    position: absolute;
+    height: 100%;
+    width: 400%;
+    font-size: 1.5rem;
+    top: -70%;
+    color: antiquewhite;
+    opacity: 1;
+}
+
+#subButton a:hover::after {
+    animation: magic 0s ease-in-out 0s 1 normal forwards;
+}
+
+
+
+
+
+/* animation */
+
+@keyframes slideRight {
+    from {
+        
+    }
+
+    to {
+        }
+}
