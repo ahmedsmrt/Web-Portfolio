@@ -12,6 +12,7 @@ body,html {
 #nav-contain {
     width: 377px;
     height: 7%;
+    width: 100%;
     position: fixed;
     z-index: 4;
 }
@@ -40,6 +41,7 @@ body,html {
     top: 20%;
     display: inline-block;
     z-index: 3;
+    cursor: pointer;
 }
 
 
@@ -185,7 +187,7 @@ body,html {
 
 #img-text #img-text-content{
     position: relative;
-    width: 150%;
+    width: 100%;
     height: 118.5%;
     padding: .5rem .5rem;
     display: none;
@@ -193,7 +195,7 @@ body,html {
 
 #icon-view-box {
     position: absolute;
-    width: 16.3rem;
+    width: 15rem;
     height: 10.5rem;
     border-radius: 5%;
     border: 3px solid black;
@@ -212,6 +214,26 @@ body,html {
     cursor: pointer;
 }
 
+#img-text .fa-globe-africa:after {
+    position: absolute;
+    padding: .5rem;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.3rem;
+    text-align: center;
+    content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
+    top: -41%;
+    left: 152%;
+    width: 13rem;
+    height: 10.93rem;
+    background: rgb(250, 225, 191);
+    border: .5px solid black;
+    border-radius: 5%;
+    display: block;
+    transform: scale(0);
+    transition: transform ease-out 300ms;
+}
+
 #img-text .fa-book{
     position: absolute;
     left: -4.5%;
@@ -219,12 +241,33 @@ body,html {
     cursor: pointer;
     z-index: -1;
 }
+
+#img-text .fa-book:after {
+    position: absolute;
+    padding: .5rem;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.3rem;
+    text-align: center;
+    content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
+    top: -200%;
+    left: 152%;
+    width: 13rem;
+    height: 10.93rem;
+    background: rgb(250, 225, 191);
+    border: .5px solid black;
+    border-radius: 5%;
+    display: block;
+    transform: scale(0);
+    transition: transform ease-out 300ms;
+}
+
+
 #img-text .fa-book:hover + #icon-view-box {
     transition: 1s;
     z-index: 30;
     background: url(../img/book.jpg) top center/cover;
     background-size: 100% 100%;
-
 }
 
 #img-text .fa-microphone{
@@ -234,6 +277,27 @@ body,html {
     z-index: -1;
     cursor: pointer;
 }
+
+#img-text .fa-microphone:after {
+    position: absolute;
+    padding: .5rem;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.3rem;
+    text-align: center;
+    content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
+    top: -500%;
+    left: 200%;
+    width: 13rem;
+    height: 10.93rem;
+    background: rgb(250, 225, 191);
+    border: .5px solid black;
+    border-radius: 5%;
+    display: block;
+    transform: scale(0);
+    transition: transform ease-out 300ms;
+}
+
 
 #img-text .fa-microphone:hover + #icon-view-box {
     transition: 1s;
@@ -265,13 +329,15 @@ body,html {
 
 #projects {
     width: 100%;
-    height: 250vh;
+    height: 100vh;
     background: antiquewhite;
     display: flex;
     flex-direction: column;
 }
 
 /* Project Squares */
+
+
 
 #proj-collection {
     padding-top: 2%;
@@ -280,7 +346,7 @@ body,html {
     height: 100%;
     background: steelblue;
     border-top-right-radius: 50%;
-    display: flex;
+    display: none;
     position: relative;
     flex-direction: column;
 }

@@ -41,6 +41,7 @@ body {
     display: inline-block;
     list-style: none;
     display: flex;
+    height: 100%;
 }
 
 #nav-bar i {
@@ -51,6 +52,7 @@ body {
     position: relative;
     display: inline-block;
     font-size: 1rem;
+   
 }
 
 @keyframes hover {
@@ -78,7 +80,7 @@ body {
     background: black;
     border-bottom: 1px solid salmon;
     animation: hover .5s ease-in-out forwards;
-    height: 86%;
+    height: 99%;
     width: 100%;
     top: 0;
     left: 0;
@@ -597,7 +599,7 @@ body {
 #next-page {
     position: absolute;
     left: 65.4%;
-    top: 292.5%;
+    top: 294.96%;
     background: #222;
     color: antiquewhite;
     padding: 1%;
@@ -632,7 +634,7 @@ body {
 
 .active:nth-child(n+2):hover {
     transition: .1s;
-    transform: scaleX(1.035);
+    transform: scaleX(1.0);
     border-radius: 3% 0 0 3%;
     border-left: 2.5px solid lightcoral;
     left: -1.65%;
@@ -696,13 +698,16 @@ body {
     margin: 1.2%;
     border-radius: 2%;
     z-index: 2;
+
 }
 
 
 .sqr1 {
     background: url(../img/proj-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    
 }
 
 .sqr1 .proj-hover .git:hover {
@@ -712,7 +717,8 @@ body {
 .sqr2 {
     background: url(../img/proj-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .sqr2 .proj-hover .git:hover {
@@ -722,8 +728,8 @@ body {
 .sqr3 {
     background: url(../img/proj-3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: 100% 100%;
 }
 
 .sqr3 .proj-hover .git:hover {
@@ -733,7 +739,8 @@ body {
 .sqr4 {
     background: url(../img/proj-4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .sqr4 .proj-hover .git:hover {
@@ -743,7 +750,8 @@ body {
 .sqr5 {
     background: url(../img/proj-5.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .sqr5 .proj-hover .git:hover {
@@ -753,7 +761,8 @@ body {
 .sqr6 {
     background: url(../img/proj-1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .sqr6 .proj-hover .git:hover {
@@ -771,6 +780,7 @@ body {
     height: 100%;
     text-align: center;
     display: none;
+    font-size: 120%;
 }
 
 .proj-hover:after {
@@ -790,7 +800,7 @@ body {
 }
 
 .proj-hover:hover:after {
-    transition: .5s;
+    transition: 2s;
     display: inline-block;
 }
 
@@ -806,7 +816,7 @@ body {
 
 .proj-hover .git:hover {
     transition: .4s;
-    padding-right: 15%;
+    padding-right: 20%;
 }
 .git:hover + .visit {
     transition: .4s;
@@ -816,7 +826,7 @@ body {
 .proj-hover .git:hover:after {
     position: absolute;
     content: "Source Code";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -829,14 +839,14 @@ body {
 .proj-hover .visit:hover {
     color: #222;
     transition: .4s;
-    padding-right: 15%;
+    padding-right: 20%;
 }
 
 
 .sqr1 .visit:hover:after {
     position: absolute;
     content: "Visit Website";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -848,7 +858,7 @@ body {
 .sqr2 .visit:hover:after {
     position: absolute;
     content: "Visit Website";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -860,7 +870,7 @@ body {
 .sqr3 .visit:hover:after {
     position: absolute;
     content: "Visit Website";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -872,7 +882,7 @@ body {
 .sqr4 .visit:hover:after {
     position: absolute;
     content: "Visit Website";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -884,7 +894,7 @@ body {
 .sqr5 .visit:hover:after {
     position: absolute;
     content: "Play Game!";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -896,7 +906,7 @@ body {
 .sqr6 .visit:hover:after {
     position: absolute;
     content: "Try App!";
-    width: 150%;
+    width: 125%;
     height: 100%;
     left: 15%;
     text-align: center;
@@ -905,7 +915,7 @@ body {
     font-weight: 900;
 }
 
-/* Project Containers Conent */
+/* Project Containers Content */
 
 #skillz {
     position: relative;
@@ -1158,6 +1168,7 @@ body {
 #social-media h1 {
     position: relative;
     padding-bottom: 28%;
+  
 }
 
 #social-media h1:before {
