@@ -139,7 +139,7 @@ body,html {
 
 #power-button {
     position: absolute;
-    width: 7.5%;
+    width: 7.38%;
     height: 8%;
     left: 46.75%;
     top: 75.5%;
@@ -386,7 +386,6 @@ body,html {
 
 .sqr1 {
     flex: 1;
-    height: 150%;
 }
 
 .sqr2 {
@@ -598,7 +597,7 @@ footer p {
 
     to {
         border-bottom: 5px  solid antiquewhite;
-        width: 95%;
+        width: 73.5%;
     }
 }
 

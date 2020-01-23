@@ -598,15 +598,16 @@ body {
 
 #next-page {
     position: absolute;
-    left: 65.4%;
-    top: 294.96%;
     background: #222;
     color: antiquewhite;
     padding: 1%;
     width: 9rem;
-    z-index: 1;
+    height: 6.35%;
+    z-index: 2;
     border-top-left-radius: 35%;
     text-align: center;
+    right: 25%;
+    top: 293.6%;
 }
 
 #next-page:hover {
@@ -618,6 +619,7 @@ body {
     position: relative;
     background: white;
     overflow: hidden;
+    z-index: 4;
     
 }
 
@@ -828,7 +830,7 @@ body {
     content: "Source Code";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -848,7 +850,7 @@ body {
     content: "Visit Website";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -860,7 +862,7 @@ body {
     content: "Visit Website";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -872,7 +874,7 @@ body {
     content: "Visit Website";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -884,7 +886,7 @@ body {
     content: "Visit Website";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -896,7 +898,7 @@ body {
     content: "Play Game!";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -908,7 +910,7 @@ body {
     content: "Try App!";
     width: 125%;
     height: 100%;
-    left: 15%;
+    left: 25px;
     text-align: center;
     padding: 10%;
     animation: phaseInRight .4s ease-in-out 0s 1 normal forwards;
@@ -1486,3 +1488,350 @@ footer a:hover {
 
     }
 }
+
+
+
+/* Media Queries for the Fix Ups */
+
+/*  */
+
+@media screen and (max-width: 1428px) and (min-width: 1121px){
+    #icon-view-box {
+        width: 7.3rem;
+        height: 13rem;
+        top: 27%;
+        background: url(../img/about-comp-5.jpg) bottom center/cover;
+        background-size: 100% 100%;
+    }
+ 
+
+    #img-text .fa-globe-africa:after {
+        font-size: .8rem;
+        height: 8rem;
+        width: 12rem;
+        padding: .9rem;
+        padding-top: 0;
+        left: 190%;
+        top: 90%;
+    }
+
+    #img-text .fa-book:after {
+        font-size: .8rem;
+        height: 8rem;
+        width: 12rem;
+        padding: .2rem; 
+        left: 245%;
+        top: -145%;
+    }
+
+    #img-text .fa-microphone:after {
+        font-size: .8rem;
+        height: 8rem;
+        width: 12rem;
+        padding: .2rem; 
+        left: 295%;
+        top: -395%;
+    }
+
+}
+
+@media screen and (max-width: 1120px) and (min-width: 1001px){
+    #icon-view-box {
+        width: 13rem;
+        height: 7.5rem;
+        top: 60%;
+        left: 30%;
+        background: url(../img/about-comp-5.jpg) bottom center/cover;
+        background-size: 100% 100%;
+    }
+ 
+    #img-text .fa-globe-africa:after {
+        width: 15rem !important;
+        height: 7.5rem;
+        font-size: .85rem;
+        
+    }
+    #img-text .fa-globe-africa:hover + #icon-view-box {
+        background: url(../img/globe.jpg) top center/cover;
+        background-size: 100% 100%;
+    }
+    
+  
+    #img-text .fa-book:after {
+        width: 15rem !important;
+        height: 7.5rem;
+        font-size: .85rem;
+        top: -310%;
+    }
+    
+
+    #img-text .fa-book:hover + #icon-view-box {
+        background: url(../img/book.jpg) top center/cover;
+        background-size: 100% 100%;
+    }
+
+    
+    
+    #img-text .fa-microphone:after {
+        width: 15rem !important;
+        height: 7.5rem;
+        font-size: .85rem;
+        top: -580%;
+    }
+    
+    #img-text .fa-microphone:hover + #icon-view-box {
+        background: url(../img/karaoke.jpg) top center/cover;
+        background-size: 100% 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px){
+
+    
+    #about {
+        overflow: hidden;
+    }
+    .img-layer img {
+        animation: skewIn 1s ease-in-out 0s 1 alternate forwards;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        top: 15%;
+        left: 0%;
+        transform: scaleX(1.75) scaley(1.4);
+    }
+    
+    #power-button {
+        position: absolute;
+        width: 7%;
+        height: 8%;
+        left: 46.75%;
+        top: 75.5%;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    #power-button #pwr-cont{
+        display: inline-block;
+        position: absolute;
+        right: 100%;
+        width: 7rem;
+        height: 100%;
+        top: 20%;
+        font-size: 1.85rem;
+    }
+    
+    #page-creep {
+        display: none;
+    }
+    
+    #img-text {
+        text-align: center;
+        position: absolute;
+        color: antiquewhite;
+        width: 75%;
+        height: 45%;
+        left: 12.8%;
+        top: 15.5%;
+        z-index: 3;
+        animation: skewInText .9s ease-in-out 0s 1 alternate forwards;
+        display: none;
+        font-size: 1.5rem;
+    }
+    
+    #img-text #img-text-content{
+        position: relative;
+        width: 100%;
+        height: 118.5%;
+        padding: .5rem .5rem;
+        display: none;
+    }
+    
+    #icon-view-box {
+        position: absolute;
+        width: 12rem !important;
+        height: 15rem !important;;
+        left: 70% !important;
+        top: 30%;
+    
+    }
+    
+    #img-text .fa-globe-africa {
+        left: 5%;
+        top: 25%;
+    }
+    
+    #img-text .fa-globe-africa:after {
+
+        top: 75%;
+        left: 250%;
+        width: 18rem !important;
+        height: 10.93rem;
+
+    }
+    #img-text .fa-book{
+        left: 5%;
+        top: 55%;
+    }
+    
+  
+    #img-text .fa-book:after {
+        top: -140%;
+        left: 270%;
+        width: 18rem !important;
+        height: 10.93rem;
+    }
+    
+    
+    #img-text .fa-microphone{
+        left: 5.7%;
+        top: 85%;
+    }
+    
+    #img-text .fa-microphone:after {
+        top: -360%;
+        left: 320%;
+        width: 18rem !important;
+        height: 10.93rem;
+    }
+    
+    
+    #page-creep {
+        height: 60%;
+        width: 30%;
+        position: absolute;
+        left: 70%;
+        bottom: -100%;
+        overflow: hidden;
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1550px) and (min-width: 1400px){
+    .proj-hover {
+        font-size: 120%;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 1600px) and (min-width: 1201px){
+
+
+    .proj-hover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: none;
+        font-size: 105%;
+    }
+    .sqr1 .visit:hover:after {
+        left: 30px;
+        
+    }
+    
+    .sqr2 .visit:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr3 .visit:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr4 .visit:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr5 .visit:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr6 .visit:hover:after {
+        left: 30px;
+    }
+    .sqr1 .git:hover:after {
+        left: 30px;
+        
+    }
+    
+    .sqr2 .git:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr3 .git:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr4 .git:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr5 .git:hover:after {
+        left: 30px;
+
+    }
+    
+    .sqr6 .git:hover:after {
+        left: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width:1600px) and (min-width: 768px) {
+        #mobile_links {
+            display: none;
+        }
+}
+
+#mobile_links {
+    position: relative;
+    top: 15%;
+    font-size: 2.5rem;
+    padding: 3rem;
+    font-weight: 900;
+}
+
+#mobile_links a:visited {
+    color: black;
+}
+
+
+#mobile_links .web_link {
+    text-decoration: none;
+    padding: .5rem;
+}
+
+#mobile_links .web_link:hover {
+    color: orangered;
+    transition: .5s;
+}
+
+#mobile_links .git_link {
+    text-decoration: none;
+    padding: .5rem;
+
+}
+
+
+#mobile_links .git_link:hover {
+    color: purple;
+    transition: .5s;
+}
+
+

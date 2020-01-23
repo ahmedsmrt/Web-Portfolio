@@ -76,8 +76,13 @@ var view5 = document.querySelector('.skz5');
 var view6 = document.querySelector('.skz6');
 var navMenu = document.querySelector('#mobileMenu');
 var navUl = document.querySelector('#mobileUl');
+var navList1 = document.querySelector(".smooth1");
+var navList2 = document.querySelector(".smooth2");
+var navList4 = document.querySelector(".smooth4");
+var navList5 = document.querySelector(".smooth5");
 
 
+// Mobile Nav Bar
 
 navMenu.addEventListener('click', function() {
   var clicked = 0;
@@ -86,11 +91,31 @@ navMenu.addEventListener('click', function() {
 
   } else {
     navUl.style.display = 'none';
+    resetNav();
   }
 
 
 });
 
+navList1.addEventListener('click', resetNav);
+navList2.addEventListener('click', resetNav);
+navList4.addEventListener('click', resetNav);
+navList5.addEventListener('click', resetNav);
+
+function resetNav() {
+  navUl.style.display = 'none';
+}
+var prevScrollpos2 = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos2 > currentScrollPos) {
+    navUl.style.transition = ".5s";
+    navUl.style.top = "0";
+  } else {
+    navUl.style.top = "-50px";
+  }
+  prevScrollpos2 = currentScrollPos;
+}
 
 
 var p1 = document.querySelector('.p-1');
