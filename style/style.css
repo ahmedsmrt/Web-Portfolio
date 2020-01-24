@@ -761,14 +761,14 @@ body {
 }
 
 .sqr6 {
-    background: url(../img/proj-1.jpg);
+    background: url(../img/Tip-Calc.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
 
 .sqr6 .proj-hover .git:hover {
-    color: #D35400;
+    color: #F4D03F;
 }
 
 .proj-sqr:hover .proj-hover {
@@ -969,7 +969,7 @@ body {
     left: -44%;
 }
 .skillz ul li .fa-js-square {
-    left: -30.5%;
+    left: -33.3%;
 }
 .skillz ul li .fa-php {
     left: -43.2%;

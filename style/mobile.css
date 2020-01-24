@@ -76,7 +76,7 @@ body,html {
 }
 
 .l-contain:after {
-    content: "Where Creativity Meets Simplicity to solve Technical Difficulties.";
+    content: "Where Creativity Meets Simplicity to solve Technical Difficulties. -A.G.Sudani";
     top: 52%;
     left: 10.5%;
     position: absolute;
@@ -199,7 +199,7 @@ body,html {
     height: 10.5rem;
     border-radius: 5%;
     border: 3px solid black;
-    left: 12%;
+    left: 20%;
     top: 77%;
     background: url(../img/about-comp-5.jpg) bottom center/cover;
     background-size: 100% 100%;
@@ -222,8 +222,8 @@ body,html {
     line-height: 1.3rem;
     text-align: center;
     content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
-    top: -41%;
-    left: 152%;
+    top: -15%;
+    left: 240%;
     width: 13rem;
     height: 10.93rem;
     background: rgb(250, 225, 191);
@@ -250,8 +250,8 @@ body,html {
     line-height: 1.3rem;
     text-align: center;
     content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
-    top: -200%;
-    left: 152%;
+    top: -240%;
+    left: 260%;
     width: 13rem;
     height: 10.93rem;
     background: rgb(250, 225, 191);
@@ -287,7 +287,7 @@ body,html {
     text-align: center;
     content: "One of my main goals in life is becoming a well rounded global citizen. To me that means being aware of the diversity of cultures  around me and the current events that all tie together to create the beautifully rich global economy!";
     top: -500%;
-    left: 200%;
+    left: 300%;
     width: 13rem;
     height: 10.93rem;
     background: rgb(250, 225, 191);
@@ -648,13 +648,195 @@ footer p {
 
 
 
-/* animation */
+/* Media Queries */
 
-@keyframes slideRight {
-    from {
-        
+
+
+
+@media screen and (min-width: 411px), screen and (max-height: 823px) {
+    @keyframes borderBottom {
+        from {
+            border-bottom: 5px  solid antiquewhite;
+            width: 0%;
+        }
+    
+        to {
+            border-bottom: 5px  solid antiquewhite;
+            width: 87%;
+        }
     }
 
-    to {
+    #img-text {
+        width: 78%;
+        left: 12.8%;
+        top: 13%;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    #icon-view-box {
+        width: 12rem;
+        height: 8.5rem;
+        left: 19%;
+        top: 80%;
+    }
+
+    #img-text .fa-globe-africa:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: 10%;
+        left: 200%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+    #img-text .fa-book:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: -200%;
+        left: 210%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+    #img-text .fa-microphone:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: -405%;
+        left: 250%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+
+    #skillz {
+        font-size: .8rem;
+    }
+
+    .skillz {
+        flex: 2;   
+        overflow: hidden;
+    }
+
+    #mobile_links {
+        top: 7%;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #form img {
+        width: 60%;
+        height: 70%;
+        position: relative;
+        left: 13%;   
+        margin-top: 5%;
+    }
+    
+    .f-section2 input {
+        display: block;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    #social-media a {
+        height: 5%;
+        color: #222;
+    }
+
+
+}
+
+
+@media screen and (max-width: 360px), screen and (max-height: 640px) {
+
+    @keyframes borderBottom {
+        from {
+            border-bottom: 5px  solid antiquewhite;
+            width: 0%;
         }
+    
+        to {
+            border-bottom: 5px  solid antiquewhite;
+            width: 100%;
+        }
+    }
+
+    #img-text {
+        width: 78%;
+        left: 12.8%;
+        top: 13%;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+    #icon-view-box {
+        width: 12rem;
+        height: 8.5rem;
+        left: 19%;
+        top: 80%;
+    }
+
+    #img-text .fa-globe-africa:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: 10%;
+        left: 200%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+    #img-text .fa-book:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: -200%;
+        left: 210%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+    #img-text .fa-microphone:after {
+        padding: .1rem;
+        font-size: .8rem;
+        top: -405%;
+        left: 250%;
+        width: 12rem;
+        height: 9rem;
+    }
+
+
+    #skillz {
+        font-size: .8rem;
+    }
+
+    .skillz {
+        flex: 2;   
+        overflow: hidden;
+    }
+
+    #mobile_links {
+        top: 7%;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #form img {
+        width: 60%;
+        height: 70%;
+        position: relative;
+        left: 13%;   
+        margin-top: 5%;
+    }
+    
+    .f-section2 input {
+        display: block;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    #social-media a {
+        height: 5%;
+        color: #222;
+    }
+
+
 }
