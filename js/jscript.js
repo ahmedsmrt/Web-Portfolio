@@ -129,7 +129,7 @@ p1.addEventListener('click', function() {
     p1.classList.remove('active');
     p1.style.height = '550%';
     sqr1.style.transform = 'translateY(40%)';
-    sqr1.style.marginTop = '-300px';
+    sqr1.style.marginTop = '-270px';
     sqr1.style.height = '170%';
     sqr1.style.fontSize = '2rem';
     // Back Button Adjustments
@@ -175,7 +175,7 @@ p2.addEventListener('click', function() {
     p2.classList.remove('active');
     p2.style.height = '550%';
     sqr2.style.transform = 'translateY(40%)';
-    sqr2.style.marginTop = '-300px';
+    sqr2.style.marginTop = '-270px';
     sqr2.style.height = '170%';
     sqr2.style.fontSize = '2rem';
     // Back Button Transition
@@ -225,7 +225,7 @@ p3.addEventListener('click', function() {
     p3.classList.remove('active');
     p3.style.height = '550%';
     sqr3.style.transform = 'translateY(40%)';
-    sqr3.style.marginTop = '-300px';
+    sqr3.style.marginTop = '-270px';
     sqr3.style.height = '170%';
     sqr3.style.fontSize = '2rem';
     // Back Button Transition
@@ -274,7 +274,7 @@ p4.addEventListener('click', function() {
     p4.classList.remove('active');
     p4.style.height = '550%';
     sqr4.style.transform = 'translateY(-20%)';
-    sqr4.style.marginTop = '-290px';
+    sqr4.style.marginTop = '-260px';
     sqr4.style.height = '175%';
     sqr4.style.width = '100%';
     sqr4.style.fontSize = '2rem';
@@ -323,7 +323,7 @@ p5.addEventListener('click', function() {
     p5.classList.remove('active');
     p5.style.height = '550%';
     sqr5.style.transform = 'translateY(-20%)';
-    sqr5.style.marginTop = '-290px';
+    sqr5.style.marginTop = '-260px';
     sqr5.style.height = '175%';
     sqr5.style.width = '100%';
     sqr5.style.fontSize = '2rem';
@@ -373,7 +373,7 @@ p6.addEventListener('click', function() {
     p6.classList.remove('active');
     p6.style.height = '550%';
     sqr6.style.transform = 'translateY(-20%)';
-    sqr6.style.marginTop = '-290px';
+    sqr6.style.marginTop = '-260px';
     sqr6.style.height = '175%';
     sqr6.style.width = '100%';
     sqr6.style.fontSize = '2rem';
