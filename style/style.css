@@ -593,7 +593,7 @@ body {
     flex-direction: column;
     border-top-right-radius: 15%;
     border-top-left-radius: 15%;
-    z-index: 3;
+    z-index: 4;
 }
 
 #next-page {
@@ -619,7 +619,7 @@ body {
     position: relative;
     background: white;
     overflow: hidden;
-    z-index: 4;
+    z-index: 10;
     
 }
 
@@ -717,14 +717,14 @@ body {
 }
 
 .sqr2 {
-    background: url(../img/proj-2.jpg);
+    background: url(../img/Budjet-App.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
 }
 
 .sqr2 .proj-hover .git:hover {
-    color: #D35400;
+    color: #F4D03F;
 }
 
 .sqr3 {
@@ -963,13 +963,13 @@ body {
     left: -38%;
 }
 .skillz ul li .fa-html5 {
-    left: -41.5%;
+    left: -43.5%;
 }
 .skillz ul li .fa-css3-alt {
-    left: -44%;
+    left: -45%;
 }
 .skillz ul li .fa-js-square {
-    left: -33.3%;
+    left: -36.5%;
 }
 .skillz ul li .fa-php {
     left: -43.2%;
