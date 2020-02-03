@@ -619,8 +619,7 @@ body {
     position: relative;
     background: white;
     overflow: hidden;
-    z-index: 10;
-    
+    z-index: 10;  
 }
 
 .proj-info h1:nth-child(2) {

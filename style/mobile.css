@@ -364,6 +364,9 @@ body,html {
     text-align: center;
 }
 
+#side-pnl {
+    z-index: 0;
+}
 
 .sect1 {
     display: flex;
